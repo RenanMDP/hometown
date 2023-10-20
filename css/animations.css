@@ -1,0 +1,29 @@
+@keyframes animate-rainbow-border {
+    0% {
+        border: var(--border-animation) red;
+    }
+    
+    18% {
+        border: var(--border-animation) orange;
+    }
+    
+    36% {
+        border: var(--border-animation) yellow;
+    }
+    
+    54% {
+        border: var(--border-animation) green;
+    }
+    
+    72% {
+        border: var(--border-animation) blue;
+    }
+    
+    90% {
+        border: var(--border-animation) indigo;    
+    }
+    
+    100% {
+        border: var(--border-animation) violet;
+    }
+}

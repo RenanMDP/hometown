@@ -1,0 +1,152 @@
+/* ===============
+   GLOBAL 
+=============== */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+
+h1, h2, h3, h4, p, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+img:hover, .activities-img-wrapper img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template:
+    "hro" auto
+    "act" auto
+    "gui" auto;
+    min-height: 100dvh;
+}
+
+.hero-wrapper::before {
+    content: "";
+    background: var(--bg-banner) var(--bg-shorthand);
+    background-size: var(--bg-size);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.hero-wrapper {
+    grid-area: hro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+
+/* ===============
+   TYPOGRAPHY 
+=============== */
+
+h1, h2, h3, h4,
+p, blockquote, 
+.imgs div {
+    position: relative;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 2px;
+}
+
+p, blockquote {
+    letter-spacing: 1.3px;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--ff-title);
+}
+
+p, blockquote {
+    font-family: var(--ff-text);
+}
+
+.hero-wrapper p {
+    font-size: 1.1rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+body {
+    color: var(--c-text);
+    -webkit-text-stroke: var(--ts-outerStroke);
+    paint-order: var(--po-outerFill);
+}
+
+.activities-wrapper::before {
+    content: "";
+    background: var(--bg-grimmTroupe) var(--bg-shorthand);
+    background-size: var(--bg-size);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.activities-wrapper {
+    grid-area: act;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgs h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.imgs div {
+    padding: 0 1rem 0 1rem;
+}
+
+.imgs img {
+    animation: animate-rainbow-border 5s linear infinite alternate;
+    height: 100px;
+}
+
+.guide-wrapper {
+    grid-area: gui;
+    background-color: aqua;
+    background: var(--bg-guide) var(--bg-shorthand);
+    background-size: var(--bg-size);
+}
