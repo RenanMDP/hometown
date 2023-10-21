@@ -1,22 +1,26 @@
 :root {
+    /* === GLOBAL === */
     --border-animation: 3px solid;
-    
+
     /* === BACKGROUND === */
-    --bg-banner: url('./images/hk_banner.webp');
-    --bg-cityTears: url('./images/city_tears.webp');
-    --bg-whitePalace: url('./images/white_palace.webp');
-    --bg-dirtmouth: url('./images/dirtmouth.webp');
-    --bg-grimmTroupe: url('./images/grimm_troupe.webp');
-    --bg-guide: url('./images/fog_canyon.webp');
+    --bg-banner: url('../images/hk_banner.webp');
+    --bg-cityTears: url('../images/city_tears.webp');
+    --bg-whitePalace: url('../images/white_palace.webp');
+    --bg-dirtmouth: url('../images/dirtmouth.webp');
+    --bg-grimmTroupe: url('../images/grimm_troupe.webp');
+    --bg-guide: url('../images/fog_canyon.webp');
     --bg-shorthand: no-repeat center;
     --bg-size: cover;
-    
+    --bg-opacity: 0.45;
+
     /* === TYPOGRAPHY === */
     --ff-title: 'Cinzel', serif;
     --ff-text: 'Tinos', serif;
     --ts-outerStroke: 3px black;
     --po-outerFill: stroke fill;
-    
+
     /* === COLOR === */
     --c-text: white;
+    --c-khaki: khaki;
+    --c-green: hsl(158, 60%, 51%);
 }
