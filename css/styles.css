@@ -19,6 +19,7 @@ body {
     color: var(--c-text);
     -webkit-text-stroke: var(--ts-outerStroke);
     paint-order: var(--po-outerFill);
+    text-wrap: balance;
 }
 
 h1,
